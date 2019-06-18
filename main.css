@@ -1,0 +1,45 @@
+.rainbow-text {
+    background-image: repeating-linear-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    font-size: 24px;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 1s ease infinite;
+}
+
+body {
+  background-image: url("https://media3.giphy.com/media/tN638m30ZEz0A/giphy.gif")
+}
+
+.nyan {
+ padding: 5% 0%;
+  margin: 5%;
+  border-radius: 50%;
+  top: 0;
+  animation-name: jump;
+  position: relative;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    
+    to {
+        top: 200px;
+    }
+}
+
+@-webkit-keyframes jump {
+    from {
+      top: 0;
+    }
+    to {
+      top: 200px;
+    }
+  }
